@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: 'silkaregular';
+    src: url('silkafont/silka-regular-webfont.eot');
+    src: url('silkafont/silka-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('silkafont/silka-regular-webfont.woff2') format('woff2'),
+         url('silkafont/silka-regular-webfont.woff') format('woff'),
+         url('silkafont/silka-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'silkaregular_italic';
+    src: url('silkafont/silka-regularitalic-webfont.eot');
+    src: url('silkafont/silka-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('silkafont/silka-regularitalic-webfont.woff2') format('woff2'),
+         url('silkafont/silka-regularitalic-webfont.woff') format('woff'),
+         url('silkafont/silka-regularitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+  font-family: silkaregular,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;
+
+}
+h1{
+  font-weight: bolder;
+}
+body{
+  color: white;
+}
+select {
+	color: black;
+	padding: 10px;
+	border: none;
+	background-color: aliceblue;
+	cursor: pointer;
+	width: 17em;
+  font-size: 16px;
+  font-weight: 300;
+	border-left: 1px solid lightgray;
+}
+
+select:focus {
+	box-shadow: 0 0 3pt 2pt #719ECE;
+	outline: 0px;
+  font-size: 16px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  font-weight: bolder;
+}
+.container {
+	display: inline-flex;
+	border-radius: 9px;
+	background-color: aliceblue;
+	padding: 10px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	gap: 5px;
+}
+.font-family-silka {
+    font-family: silkaregular,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;
+    font-weight: bolder;
+}
+.title{
+  color: white;
+  margin-top: 1.5em;
+  font-size: 5em;
+}
+.navbar{
+  background-color: white;
+  display:flex;
+  justify-content: space-around;
+}
+#banner{
+  background-image: url("https://lahaus.imgix.net/static/lh-landing-v2/hero-2022/toma-sofa_dsk_COL_MX.jpg?auto=format");
+  height: 550px;
+  width: 100%;
+  position: fixed;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
+}
+ #icon {
+  padding-left: 0.25em;
+	padding-top: 0.8em;
+  color:grey;
+}
+#search-input {
+  font-size: 16px;
+	padding: 10px;
+	outline: none !important;
+	border: none;
+	width: 23em;
+	background-color: aliceblue;
+}
+#search-btn {
+  font-size: 16px;
+	background-color: #404EED;
+	color: white;
+	border: none;
+	border-radius: 9px;
+	width: 8em;
+  height: 3em;
+	margin-left: 10px;
+}
+
+#search-btn:hover {
+	background-color: #5865F2;
+	cursor: pointer;
+}
