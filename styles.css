@@ -91,6 +91,7 @@ li a:hover {
   background-color: white;
   display:flex;
   justify-content: space-around;
+  align-items: center;
 }
 #banner{
   background-image: url("https://lahaus.imgix.net/static/lh-landing-v2/hero-2022/toma-sofa_dsk_COL_MX.jpg?auto=format");
@@ -100,6 +101,21 @@ li a:hover {
   background-size: cover;
   text-align: center;
   vertical-align: middle;
+}
+#btn-publish-free{
+  border-width: thin;
+  border-radius: 0.25em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  border-color: blue;
+  color: blue;
+  background-color: white;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 1em;
+}
+#btn-publish-free:hover{
+
 }
  #icon {
   padding-left: 0.25em;
@@ -124,7 +140,6 @@ li a:hover {
   height: 3em;
 	margin-left: 10px;
 }
-
 #search-btn:hover {
 	background-color: #5865F2;
 	cursor: pointer;
