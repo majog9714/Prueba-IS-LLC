@@ -30,6 +30,8 @@ h1{
 }
 body{
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 select {
 	color: black;
@@ -79,6 +81,15 @@ li a:hover {
   padding-left:  3.8em;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	gap: 5px;
+}
+.container-lanzamientos{
+  background-color: #243438;
+  display: flex;
+  color: white;
+  align-self: center;
+  border-radius: 2em;
+  padding: 1em;
+  margin-top: 1.5em;
 }
 .font-family-silka {
     font-family: silkaregular,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;
@@ -138,11 +149,14 @@ li a:hover {
   justify-content: space-around;
   align-items: center;
 }
+.navbar-lanzamientos-der{
+  color: white;
+}
 #banner{
   background-image: url("https://lahaus.imgix.net/static/lh-landing-v2/hero-2022/toma-sofa_dsk_COL_MX.jpg?auto=format");
   height: 550px;
   width: 100%;
-  position: fixed;
+
   background-size: cover;
   text-align: center;
   vertical-align: middle;
