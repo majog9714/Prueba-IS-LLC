@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="styles.css">
+    <!-- <script type="text/javascript" src="script.js"></script> -->
     <meta charset="utf-8">
     <title></title>
   </head>
@@ -32,8 +33,7 @@
 
   			<input type="text" name="search-input" id="search-input"
   				placeholder="Busca por ciudad, zona o barrio">
-
-  			<select name="properties" id="properties">
+  			<!-- <select name="properties" id="properties">
   				<option value="" selected disabled hidden>Tipo de Propiedad</option>
   				<optgroup label="group1">
   					<option value="option1">option1</option>
@@ -43,15 +43,53 @@
 
   				<option value="option4">option4</option>
   				<option value="option5">option5</option>
-  			</select>
-
-  			<select name="rooms" id="rooms">
-  				<option value="" selected disabled hidden>Habitaciones</option>
-  				<option value="option1">option1</option>
-  				<option value="option2">option2</option>
-  				<option value="option3">option3</option>
-  			</select>
-
+  			</select> -->
+          <div class="properties">
+            <div onclick="document.getElementById('submenu1').style.display='block';
+    				" onfocusout="document.getElementById('submenu1').style.display='none';">
+            <select>
+              <option value="" selected disabled hidden>Tipo de Propiedad</option>
+            </select>
+              <div id="submenu1">
+                <div class="">
+                  <div class="text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                      <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+                    </svg>Proyectos de Vivienda
+                  </div>
+                  <div class="text">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                        <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+                      </svg>Apartamentos
+                  </div>
+                  <div class="text">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                      </svg>
+                  Casas
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="rooms">
+  				<div onclick="document.getElementById('submenu').style.display='block';
+  				" onfocusout="document.getElementById('submenu').style.display='none';">
+  					<select>
+  						<option value="" selected disabled hidden>Habitaciones</option>
+  					</select>
+  					<div id="submenu">
+  						<div>
+                <span class="text">habitaciones</span>
+  							<button>-</button>
+  							<span class="text">0</span>
+  							<button>+</button>
+  						</div>
+  					</div>
+  				</div>
+  			</div>
   			<button id="search-btn">
   				Buscar
   			</button>
@@ -59,5 +97,14 @@
   		</div>
     </div>
 <!-- DIV CONTENEDOR LANZAMIENTOS LAHAUS -->
+    <div class="container-lanzamientos">
+      <div class="lanzamientos-izq">
+
+      </div>
+      <div class="lanzamientos-der">
+
+      </div>
+
+    </div>
   </body>
 </html>
