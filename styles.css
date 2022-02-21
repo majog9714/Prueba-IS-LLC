@@ -99,6 +99,17 @@ li a:hover {
   margin-left: 15em;
   margin-right: 15em;
 }
+.container-animacion-lanzamientos{
+  margin: 12em;
+  display: flex;
+  align-items: center;
+  background-color: #f9fffe;
+}
+.cnt-lanz-anim-texto{
+  color: #243438;
+  padding-top: 4em;
+  padding-left: 6em;
+}
 .font-family-silka {
     font-family: silkaregular,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;
     font-weight: bolder;
@@ -214,10 +225,22 @@ li a:hover {
   font-weight: bolder;
   padding: 0.5em;
 }
+#corta{
+  /* border: solid; */
+  width: 30%;
+  height: 3px;
+  background-color: #243438;
+  margin-left: 0%;
+  margin-right: 50%
+}
  #icon {
   padding-left: 0.25em;
 	padding-top: 0.8em;
   color:grey;
+}
+#lanz-titulo{
+  font-size: 2em;
+  font-weight: bolder;
 }
 #search-input {
   font-size: 16px;
