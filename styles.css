@@ -21,9 +21,28 @@
     font-style: normal;
 
 }
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
 *{
-  font-family: silkaregular,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;
-
+  font-family: silkaregular,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif
 }
 h1{
   font-weight: bolder;
@@ -32,6 +51,9 @@ body{
   color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 select {
 	color: black;
@@ -100,15 +122,144 @@ li a:hover {
   margin-right: 15em;
 }
 .container-animacion-lanzamientos{
-  margin: 12em;
   display: flex;
   align-items: center;
   background-color: #f9fffe;
+
+}
+.container-comohacer-posible{
+  color:black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-hausplus{
+  display: flex;
+  justify-content: space-between;
+  width: 1300px;
+  align-items: center;
+  padding-top: 12em;
+  padding-bottom: 12em;
+  color: black;
+  font-weight: 600;
+}
+.container-hausplus span {
+    color:#3b82f6;
+}
+.container-hausplus button {
+  border-radius: 1em;
+  background-color: #2832db;
+  color: white;
+  border:none;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1.5em 7em 1.5em 7em;
+}
+.container-titulo-guias{
+  color:black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-titulo-guias p{
+  color:#5b6866;
+  font-size: 1.5em;
+}
+.container-tarjetascolores{
+  display: flex;
+  width: 1300px;
+  justify-content: space-around;
+  padding-top: 3em;
+}
+.container-tarjetascolores div{
+  display: flex;
+  flex-direction: column;
+  border-radius: 1em;
+  width: 272px;
+  justify-content: space-between;
+}
+.container-tarjetascolores span {
+  color: black;
+  padding: 1em;
+  text-align: center;
+}
+.container-tarjetascolores img{
+  position: relative;
+  z-index: 100;
+  max-width: 100%;
+  height: auto;
+  bottom: 0;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+.container-links{
+  display: flex;
+  color: black;
+  align-items: center;
+  padding-top: 7em;
+  justify-content: space-around;
+  width: 1200px;
+}
+.container-links-der{
+  text-align: right;
+}
+.container-links-img{
+  display: flex;
+  justify-content: flex-end;
+  gap:0.5em;
+}
+.container-direcciones{
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+.container-direcciones div{
+  display: flex;
+  flex-direction: column;
+}
+.container-enlaces-social{
+  display: flex;
+  justify-content: flex-start;
+  gap:2em;
+  padding-top: 1em;
+  color:black;
+}
+.container-enlaces-finales{
+  padding-top: 1.5em;
+  color:black;
+  font-size: small;
+    line-height: 1px;
+}
+
+.tarjeta-azul{
+  background-color: #71b5ff;
+}
+.tarjeta-turquesa{
+  background-color: #00d1b0;
+}
+.tarjeta-amarilla{
+  background-color: #ffe7b6;
+}
+.tarjeta-lila{
+  background-color: #c0c7ff;
 }
 .cnt-lanz-anim-texto{
   color: #243438;
-  padding-top: 4em;
-  padding-left: 6em;
+  margin-left: 20em;
+  padding-top: 12em;
+  padding-right: 30em;
+  padding-bottom: 12em;
+}
+.cnt-lanz-animado{
+  background-color: grey;
+  color: #243438;
+  border-radius: 5em;
+  margin-left: 5%;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-right: 20em;
+  display: flex;
+
 }
 .font-family-silka {
     font-family: silkaregular,Helvetica Neue,Arial,Helvetica,Verdana,sans-serif;
@@ -116,6 +267,17 @@ li a:hover {
 }
 .footer{
   background-color: #3ecfaf;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+}
+.footer-content{
+  max-width: 1440px;
+  align-self:center;
 }
 .info-lanzamientos{
   background-color: white;
@@ -152,12 +314,18 @@ li a:hover {
   padding: 1em;
   flex-grow: 2;
 }
+.logo-enlace{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
 
 .navbar{
   background-color: white;
   display:flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 .navbar-lanzamientos-der{
   color: white;
@@ -177,12 +345,29 @@ li a:hover {
 	display: block;
 	padding: 15px 20px;
 }
+.slide-top {
+	-webkit-animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 .tarjeta-lanzamientos{
   display: flex;
   flex-direction: column;
   width:390.36px;
   position:relative;
   margin: 0.5em;
+}
+.tarjetas-pos{
+  display: flex;
+  justify-content: space-around;
+  gap:10px;
+
+}
+.tarjetas-pos div {
+  text-align: center;
+  width: 400px;
+}
+.tarjetas-pos h4 {
+  text
 }
 
 .title{
@@ -194,6 +379,7 @@ li a:hover {
   color: black;
   font-size: 1em;
 }
+
 
 #banner{
   background-image: url("https://lahaus.imgix.net/static/lh-landing-v2/hero-2022/toma-sofa_dsk_COL_MX.jpg?auto=format");
@@ -302,4 +488,9 @@ li a:hover {
 #navbar-text:hover{
   color: #f8f08e;
   font-weight: bolder;
+}
+#parrafo-gris{
+  color: grey;
+  font-size: 1.3em;
+  font-weight: lighter;
 }
