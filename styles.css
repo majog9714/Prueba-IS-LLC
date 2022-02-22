@@ -99,6 +99,14 @@ li a:hover {
     border-color: transparent;
     color:white;
 }
+.btn-lugar{
+  border: 1px solid #f8f08e;
+  background-color: #fff8eb;
+  border-radius: 2em;
+  font-weight: bold;
+  font-size: 1.3em;
+  padding: 1em;
+}
 .container {
 	display: inline-flex;
 	border-radius: 9px;
@@ -299,19 +307,28 @@ li a:hover {
 .container-enlaces .blue {
   color: blue;
 }
+.container-slider{
+  position: relative;
+  width: 100%;
+}
+.container-slider-title{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  text-align: center;
+  width: 40%;
+}
+.container-slider-title div{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+.container-slider-btns{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
 
-.tarjeta-azul{
-  background-color: #71b5ff;
-}
-.tarjeta-turquesa{
-  background-color: #00d1b0;
-}
-.tarjeta-amarilla{
-  background-color: #ffe7b6;
-}
-.tarjeta-lila{
-  background-color: #c0c7ff;
-}
 .cnt-lanz-anim-texto{
   color: #243438;
   margin-left: 20em;
@@ -397,6 +414,9 @@ li a:hover {
 }
 
 .navbar{
+  position: fixed;
+  z-index: 3;
+  top:0;
   background-color: white;
   display:flex;
   justify-content: space-around;
@@ -421,6 +441,12 @@ li a:hover {
 	display: block;
 	padding: 15px 20px;
 }
+
+.seleccionado{
+  background-color: #f8f08e;
+  border: none;
+}
+
 .slide-top {
 	-webkit-animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -467,6 +493,19 @@ li a:hover {
 }
 .tarjetas-pos h4 {
   text
+}
+
+.tarjeta-azul{
+  background-color: #71b5ff;
+}
+.tarjeta-turquesa{
+  background-color: #00d1b0;
+}
+.tarjeta-amarilla{
+  background-color: #ffe7b6;
+}
+.tarjeta-lila{
+  background-color: #c0c7ff;
 }
 
 .title{
