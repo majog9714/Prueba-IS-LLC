@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="styles.css">
-    <!-- <script type="text/javascript" src="script.js"></script> -->
     <meta charset="utf-8">
     <title></title>
   </head>
@@ -292,36 +291,54 @@
       </div>
     </div>
 <!-- DIV FRASES LA HAUS -->
-    <div class="slider slider-frases">
-        <button type="button" name="button"> < </button>
-        <div class="frase frase-forbes">
-          <img src="" alt="">
+    <div class="slider-frases">
+        <button type="button" name="btn-izq" id="btn-izq"> < </button>
+        <div class="frase active" id="frase1">
+          <p>
+            La Haus supera valuación de US$100 millones tras ronda de US$35 millones
+          </p>
+          <img src="imagenes/forbes_logo.svg" alt="">
         </div>
-        <div class="frase frase-bloomberg">
-          <img src="" alt="">
+        <div class="frase" id="frase2">
+          <p>
+            Real estate startup La Haus (. . .) plans to take its Zillow-inspired platform to cities across Latin America
+          </p>
+          <img src="imagenes/bloomberg.png" alt="">
         </div>
-        <div class="frase frase-crunchbase">
-          <img src="" alt="">
+        <div class="frase" id="frase3">
+          <p>
+            Colombia’s La Haus Raises $35M To Digitize LatAm’s Residential Real Estate
+          </p>
+          <img src="imagenes/crunchbase.png" alt="">
         </div>
-        <div class="frase frase-greenspring">
-          <img src="" alt="">
+        <div class="frase" id="frase4">
+          <p>
+            La Haus se destaca como líder en este espacio por su visión y trayectoria
+          </p>
+          <img src="imagenes/greenspring.png" alt="">
         </div>
-        <div class="frase frase-larepublcia">
-          <img src="" alt="">
+        <div class="frase" id="frase5">
+          <p>
+            La plataforma La Haus, líder en tecnología inmobiliaria, anunció que cerró una ronda de inversión Serie B por US$35 millones
+          </p>
+          <img src="imagenes/la-republica.png" alt="">
         </div>
-        <button type="button" name="button"> > </button>
+        <button type="button" name="btn-der" id="btn-der"> > </button>
     </div>
 <!-- DIV LA HAUS PARA CONSTRUCTORAS -->
     <div class="container-constructoras">
+      <div>
         <h2>La Haus para Constructoras</h2>
-        <h3>Conoce La Haus Exclusives, la plataforma que venderá tus proyectos inmobiliarios hasta 3 veces más rápido. </h3>
-        <button type="button" name="button">Quiero unirme a Exlcusives</button>
+        <p>Conoce La Haus Exclusives, la plataforma que venderá tus proyectos inmobiliarios hasta 3 veces más rápido. </p>
+        <button type="button" name="btn-unirme-exclusives" id="btn-unirme-exclusives">Quiero unirme a Exlcusives</button>
+      </div>
+      <img src="imagenes/bk-allies-banner.png" alt="">
     </div>
 <!-- DIV ENLACES Y MOSTRAR MÁS -->
     <div class="container-enlaces">
-      <div class="lista enlaces1">
+      <div>
         <h4>Proyectos de vivienda</h4>
-        <ul>
+        <ul id="lista-enlaces1">
           <li> <a href="#">Proyectos de vivienda Medellín</a> </li>
           <li> <a href="#">Proyectos de vivienda Bogotá</a> </li>
           <li> <a href="#">Proyectos de vivienda Madrid</a> </li>
@@ -336,10 +353,11 @@
           <li> <a href="#">Proyectos de vivienda Rionegro</a> </li>
           <li> <a href="#">Todos los proyectos de vivienda</a> </li>
         </ul>
+        <a href="javascript:void(0);" onclick="showMore(1)" class="blue">Mostrar más</a>
       </div>
-      <div class="lista enlaces2">
+      <div>
         <h4>Apartamentos</h4>
-        <ul>
+        <ul id="lista-enlaces2">
           <li> <a href="#">Apartamentos en venta Bogotá</a> </li>
           <li> <a href="#">Apartamentos en venta Medellín</a> </li>
           <li> <a href="#">Apartamentos en venta Sabaneta</a> </li>
@@ -354,10 +372,11 @@
           <li> <a href="#">Apartamentos en venta El poblado</a> </li>
           <li> <a href="#">Todos los apartamentos en venta</a> </li>
         </ul>
+        <a href="javascript:void(0);" onclick="showMore(2)" class="blue">Mostrar más</a>
       </div>
-      <div class="lista enlaces3">
+      <div>
         <h4>Búsquedas populares</h4>
-        <ul>
+        <ul id="lista-enlaces3">
           <li> <a href="#">Apartamentos subsidiados Bogotá</a> </li>
           <li> <a href="#">Apartamentos subsidiados Medellín</a> </li>
           <li> <a href="#">Apartaestudios en venta Bogotá</a> </li>
@@ -369,22 +388,24 @@
           <li> <a href="#">Todas las casas en venta</a> </li>
           <li> <a href="#">Apartamentos en arriendo</a> </li>
         </ul>
+        <a href="javascript:void(0);" onclick="showMore(3)" class="blue">Mostrar más</a>
       </div>
-      <div class="lista enlaces3">
+      <div>
         <h4>Búsquedas populares</h4>
-        <ul>
+        <ul id="lista-enlaces4">
           <li> <a href="#">La Haus Exclusives</a> </li>
           <li> <a href="#">Blog</a> </li>
           <li> <a href="#">Guía de compra de vivienda</a> </li>
           <li> <a href="#">Calcula el pago de tu crédito hipotecario</a> </li>
         </ul>
+        <a href="javascript:void(0);" onclick="showMore(4)" class="blue">Mostrar más</a>
       </div>
     </div>
   <!-- DIV FOOTER LA HAUS FINAL -->
     <div class="footer">
       <div class="footer-content">
         <div class="logo-enlace">
-          <img src="https://lahaus.imgix.net/static/branding/logo-lahaus-full.svg?auto=compress,format&dpr=2" alt="Icon LaHaus" width="124" height="24" style="margin-bottom:1em;">
+          <img src="https://lahaus.imgix.net/static/branding/logo-lahaus-icon-white.svg?auto=compress,format&dpr=2" alt="Icon LaHaus" width="124" height="24" style="margin-bottom:1em;">
           <a href="#">Estás en La Haus Colombia > </a>
         </div>
         <hr>
@@ -440,10 +461,16 @@
               <li> <a href="#">Mapa del sitio·</a> </li>
               <li> <a href="#">La haus México·</a> </li>
             </ul>
-            <img src="" alt="">
+            <hr>
+            <div>
+                <p>Hacemos parte de:</p>
+                <img src="imagenes/endeavor-logo.svg" alt="">
+            </div>
+
         </div>
       </div>
     </div>
 
   </body>
+  <script type="text/javascript" src="script.js"></script>
 </html>
